@@ -1,0 +1,123 @@
+/* Hero Section */
+
+.min-vh-75 {
+    min-height: 75vh;
+}
+
+.profile-image {
+    width: 350px;
+    height: 390px;
+    object-fit: cover;
+}
+
+.text-purple {
+    color: #6f42c1;
+}
+
+.about-hero {
+    background: #f8fbff;
+}
+
+.about-image {
+    width: 320px;
+    height: 350px;
+    object-fit: cover;
+}
+
+.bg-black {
+    background-color: #000000 !important;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    color: #4B5563;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.navbar-brand {
+    font-family: "Poppins", sans-serif;
+    color: #e715ee;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 700;
+}
+
+.navbar-brand {
+    color: #25a2eb !important;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.text-primary {
+    color: #2563EB !important;
+}
+
+.btn-primary {
+    background-color: #2563EB !important;
+    border-color: #2563EB !important;
+}
+
+.btn-primary:hover {
+    background-color: #1D4ED8 !important;
+    border-color: #1D4ED8 !important;
+}
+
+
+.card-img-top {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+    background-color: #f5f5f5;
+}
+
+
+
+.profile-light {
+    position: relative;
+    width: 370px;
+    height: 410px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-light::before {
+    content: "";
+    position: absolute;
+    width: 365px;
+    height: 365px;
+    border-radius: 50%;
+    border: 4px solid #2563eb;
+    box-shadow:
+        0 0 10px #2563eb,
+        0 0 25px #38bdf8,
+        0 0 45px rgba(37, 99, 235, 0.6);
+    animation: rotateLight 3s linear infinite;
+}
+
+.profile-light::after {
+    content: "";
+    position: absolute;
+    width: 365px;
+    height: 365px;
+    border-radius: 50%;
+    border: 2px solid #38bdf8;
+    box-shadow:
+        0 0 15px #38bdf8,
+        0 0 30px rgba(56, 189, 248, 0.5);
+    animation: rotateLight 3s linear infinite reverse;
+}
+
+.profile-light .profile-image {
+    position: relative;
+    z-index: 2;
+}
